@@ -13,6 +13,7 @@ img {
 /*************** side størrelse *********************/
 main {
   max-width: 1200px;
+  margin: 0 auto;
 }
 /*************** Mobil *********************/
 .hvid_baggrund_bord {

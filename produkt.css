@@ -13,26 +13,42 @@ img {
 /*************** side størrelse *********************/
 main {
   max-width: 1200px;
+  margin: 0 auto;
 }
 /*************** Mobil *********************/
+.produkt_intro {
+  padding: 30px;
+}
+.produkt_intro h1 {
+  margin-bottom: 40px;
+}
 .produkt_description {
   margin-block: 20px;
   background-color: #6f3535;
-  padding: 15px;
+  padding: 30px;
+}
+.produkt_description p {
+  max-width: 350px;
+  line-height: 2.2;
+}
+.produkt_description h2 {
+  margin-bottom: 20px;
 }
 .produkt_img {
   max-width: 500px;
   object-fit: cover;
+  padding: 20px;
 }
 .knap {
   background-color: #fdbc28;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
-  padding: 10px 0; /* Fjern den horisontale padding */
-  margin: 10px;
+  padding: 10px 5px; /* Fjern den horisontale padding */
   text-decoration: none;
+  margin-top: 20px;
   color: black;
+  border: none;
 }
 
 .knap:hover {
@@ -47,5 +63,12 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .produkt_description p {
+    max-width: 800px;
+  }
+  .produkt_intro {
+    margin-top: 50px;
+    padding: 80px;
   }
 }
