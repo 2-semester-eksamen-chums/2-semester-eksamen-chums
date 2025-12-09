@@ -13,13 +13,13 @@ img {
 
 /******* Styling på alle sider ********/
 
-main {
-  padding: 15px;
-}
-
 body {
   background-color: #571212;
   color: white;
+}
+
+html {
+  background-color: white;
 }
 
 /******************** MENU ************************************/
