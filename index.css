@@ -10,6 +10,11 @@ img {
   height: auto;
   display: block;
 }
+/******************* HTML + BODY ***********************/
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /******************** MOBIL *******************************************************************************/
 /****** Forside billede og tekst ***********/
@@ -106,6 +111,7 @@ hr {
 
 .about_us_p {
   margin-bottom: 10px;
+  line-height: 1.45;
 }
 
 .about_us_img {
@@ -116,7 +122,33 @@ hr {
 /********* Ratings ***************************/
 .ratings_h2 {
   margin-top: 30px;
+  margin-left: 15px;
 }
+
+.rating_box {
+  max-width: 250px;
+  height: 250px;
+  padding: 20px 30px;
+  background-color: #ffcb57;
+  border-radius: 7px;
+  flex-shrink: 0;
+  line-height: 1.45;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center; /* centrer lodret */
+  justify-content: center; /* centrer vandret */
+}
+
+.rating_scroll {
+  display: flex;
+  gap: 10px; /* afstand mellem boksene */
+  overflow-x: auto; /* gør rækken scrollbar vandret */
+  padding: 20px 0; /* plads over/under */
+  scroll-behavior: smooth; /* lækker smooth scrolling */
+  white-space: normal; /* g'r at teksten bliver liggende inde i boksene */
+}
+
 /******************** DESKTOP *******************************************************************************/
 @media (min-width: 768px) {
   /******* Forside grid ******************/
@@ -130,12 +162,26 @@ hr {
   .about_us_img {
     order: -1;
     margin-top: 30px;
-    max-width: 450px;
+    max-width: 500px;
+  }
+
+  .about_us_container {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   /******* Location section ************/
   .location_img {
-    max-width: 450px;
+    max-width: 500px;
+  }
+
+  .location_opening_backcolor {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding: 50px;
   }
 
   /******* Forside billede og tekst ************/
