@@ -11,6 +11,17 @@ img {
   display: block;
 }
 
+/******* Styling på alle sider ********/
+
+main {
+  padding: 15px;
+}
+
+body {
+  background-color: #571212;
+  color: white;
+}
+
 /******************** MENU ************************************/
 
 header {
@@ -147,3 +158,5 @@ header {
     margin-block: 0;
   }
 }
+
+/****** FOOTER *******/
