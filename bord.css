@@ -1,0 +1,77 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*************** side størrelse *********************/
+main {
+  max-width: 1200px;
+}
+/*************** Mobil *********************/
+.hvid_baggrund_bord {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 30px;
+}
+.bord_step {
+  display: grid;
+  color: rgb(201, 201, 201);
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-inline: 60px; /***Rykker steps længere væk fra kanten og tættere på hinanden***/
+}
+.step_1 {
+  background-color: #fdbc28;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+.step_234 {
+  background-color: rgb(201, 201, 201);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+.bord_knapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.knap_rund {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Gør dem runde */
+  border: none;
+}
+/*************** Web *********************/
+@media (min-width: 768px) {
+  .grid_1_1_bord {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .bord_step {
+    display: flex; /**Så de ligger sig ved siden af hinanden**/
+    gap: 20px;
+  }
+  .bord_knapper {
+    display: grid;
+    /* Definer 4 lige store kolonner */
+    grid-template-columns: repeat(4, 1fr);
+    /* Tillad Grid at styre rækkerne automatisk */
+  }
+}
