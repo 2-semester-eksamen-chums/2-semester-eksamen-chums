@@ -1,0 +1,51 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*************** side størrelse *********************/
+main {
+  max-width: 1200px;
+}
+/*************** Mobil *********************/
+.produkt_description {
+  margin-block: 20px;
+  background-color: #6f3535;
+  padding: 15px;
+}
+.produkt_img {
+  max-width: 500px;
+  object-fit: cover;
+}
+.knap {
+  background-color: #fdbc28;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0; /* Fjern den horisontale padding */
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.knap:hover {
+  background-color: #ffcb57;
+  transform: scale(1.03);
+}
+
+/*************** Web *********************/
+@media (min-width: 768px) {
+  /******* øverste stykke grid ******************/
+  .grid_1_1_produkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
