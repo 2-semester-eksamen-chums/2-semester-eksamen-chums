@@ -21,7 +21,14 @@ img {
 }
 
 .event-intro h2 {
-  font-size: 30px;
+  font-size: 40px;
+}
+
+/** Vi fjerner billedet KUN i mobil, laver omvendt media query*/
+@media (max-width: 768px) {
+  .event-intro img {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -69,18 +76,18 @@ img {
 }
 
 .h3_events {
-  font-size: 22px;
+  font-size: 26px;
   padding-top: 10px;
   font-weight: bolder;
 }
 
 .h4_events {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
 .p_events {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -115,6 +122,46 @@ img {
 
 .privat-booking-indhold p {
   padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .privat-booking {
+    padding: 50px 20px;
+    min-height: 330px;
+  }
+
+  .privat-booking p {
+    font-size: 18px;
+  }
+
+  .privat-booking-indhold {
+    max-width: 700px;
+  }
+
+  .privat-booking h2 {
+    font-size: 35px;
+  }
+}
+
+.booking-knap {
+  background-color: #331a1a;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 27px;
+  padding: 15px 37px;
+  border: 1px;
+  color: white;
+}
+
+.booking-knap:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .booking-knap {
+    font-size: 15px;
+  }
 }
 
 /****** GALLERI *****/
