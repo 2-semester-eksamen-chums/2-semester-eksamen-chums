@@ -12,4 +12,130 @@ img {
 
 body {
   padding: 15px;
+  background-color: #571212; /*** SLET */
+  color: white; /*** SLET ***/
+}
+
+/***** events *******/
+
+.event-intro {
+  max-width: 340px;
+  margin: 0 auto;
+  line-height: 2.2;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.event-intro h2 {
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .event-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    padding: 40px 20px;
+  }
+
+  .event-intro p {
+    max-width: 500px;
+    line-height: 2.4;
+  }
+
+  .event-intro img {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    max-width: 610px;
+    object-fit: cover;
+  }
+
+  .event-intro h2 {
+    font-size: 50px;
+  }
+}
+
+.events {
+  display: grid;
+  gap: 2rem;
+  max-width: 340px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  line-height: 2;
+}
+
+.event-produkt {
+  padding: 20px;
+  max-width: 340px;
+  margin: 0 auto;
+  background-color: #6a1717;
+  color: white;
+  line-height: 1.8;
+}
+
+.h3_events {
+  font-size: 22px;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+
+.h4_events {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.p_events {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+@media (min-width: 768px) {
+  .events {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 5px;
+  }
+
+  .event-produkt {
+    max-width: 100%;
+  }
+}
+
+/****** Request afsnit *******/
+
+.privat-booking {
+  background-color: #fdbc28;
+  padding: 20px;
+  color: #331a1a;
+}
+
+.privat-booking-indhold {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2;
+}
+
+.privat-booking-indhold p {
+  padding: 5px;
+}
+
+/****** GALLERI *****/
+
+.galleri-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .galleri-container {
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 30px;
+  }
 }
