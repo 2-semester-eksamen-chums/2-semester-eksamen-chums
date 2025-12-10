@@ -16,18 +16,30 @@ main {
   margin: 0 auto;
 }
 /*************** Mobil *********************/
+.bord_h1 {
+  margin-block: 40px;
+  margin-left: 22px;
+}
 .hvid_baggrund_bord {
   background-color: white;
   color: black;
   text-align: center;
   padding: 30px;
+  margin: 20px;
+  max-width: 600px;
+}
+.hvid_baggrund_bord h2 {
+  margin-block: 30px;
+}
+.p_over8 {
+  margin-top: 40px;
 }
 .bord_step {
   display: grid;
   color: rgb(201, 201, 201);
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding-inline: 60px; /***Rykker steps længere væk fra kanten og tættere på hinanden***/
+  padding-inline: 60px; /**Rykker steps længere væk fra kanten og tættere på hinanden**/
 }
 .step_1 {
   background-color: #fdbc28;
@@ -37,6 +49,7 @@ main {
   color: white;
   padding: 12px;
   margin-bottom: 5px;
+  margin-left: 30px;
 }
 .step_234 {
   background-color: rgb(201, 201, 201);
@@ -46,17 +59,23 @@ main {
   color: white;
   padding: 12px;
   margin-bottom: 5px;
+  margin-left: 30px;
 }
 .bord_knapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-left: 60px;
 }
 .knap_rund {
   width: 80px;
   height: 80px;
   border-radius: 50%; /* Gør dem runde */
   border: none;
+}
+.bookbord_img {
+  max-width: 450px;
+  margin: 20px;
 }
 /*************** Web *********************/
 @media (min-width: 768px) {
@@ -67,12 +86,30 @@ main {
   }
   .bord_step {
     display: flex; /**Så de ligger sig ved siden af hinanden**/
-    gap: 20px;
+    align-items: center; /* centrer lodret */
+    justify-content: center; /* centrer vandret */
+    gap: 40px;
   }
   .bord_knapper {
     display: grid;
     /* Definer 4 lige store kolonner */
     grid-template-columns: repeat(4, 1fr);
     /* Tillad Grid at styre rækkerne automatisk */
+    margin-left: 20px;
+  }
+  .knap_rund {
+    margin-top: 20px;
+  }
+  .bookbord_img {
+    max-width: 550px;
+  }
+  .step_1 {
+    margin-left: 0;
+  }
+  .step_234 {
+    margin-left: 0;
+  }
+  .p_over8 {
+    margin-top: 60px;
   }
 }
