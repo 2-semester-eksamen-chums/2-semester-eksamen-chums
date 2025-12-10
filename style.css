@@ -160,3 +160,116 @@ header {
 }
 
 /****** FOOTER *******/
+
+/***** FOOTER ***/
+footer {
+  background-color: #331a1a;
+  color: #d6d6d6;
+  text-align: left;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 20px auto;
+}
+
+footer h3 {
+  font-size: 16px;
+  max-width: 300px;
+  line-height: 1.7;
+  font-weight: lighter;
+}
+
+.sign-up {
+  padding: 25px;
+}
+
+.search-input {
+  min-width: 290px;
+  padding: 15px;
+  font-size: 11px;
+  border: 1px;
+  border-radius: 20px;
+}
+
+.sign-up-button {
+  background-color: #fdbc28;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+  border: 1px;
+  transition: transform 0.3s ease;
+}
+
+.sign-up-button:hover {
+  background-color: #ffcb57;
+  transform: scale(1.03);
+}
+
+.kontakt {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.kontakt a {
+  color: #d6d6d6;
+  text-decoration: underline;
+}
+
+.kontakt a:hover {
+  color: #ffcb57;
+}
+
+.rapport {
+  font-size: 13px;
+  padding-top: 50px;
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+.rapport img {
+  max-width: 30px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .search-input {
+    min-width: 490px;
+    font-size: 14px;
+  }
+
+  .sign-up-button {
+    padding: 15px 40px;
+    font-size: 14px;
+  }
+
+  .sign-up {
+    padding: 25px 0px;
+  }
+
+  .kontakt {
+    font-size: 15px;
+  }
+
+  .footer-nederst {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .rapport {
+    text-align: right;
+    font-size: 15px;
+  }
+
+  .rapport img {
+    max-width: 45px;
+    display: block;
+    margin: 0 0 10px auto;
+  }
+}
