@@ -11,10 +11,6 @@ img {
   display: block;
 }
 /******************* HTML + BODY ***********************/
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 /******************** MOBIL *******************************************************************************/
 /****** Forside billede og tekst ***********/
@@ -62,20 +58,25 @@ body {
 }
 
 /****** Opening hours section + location section *************/
-.day_time_rows {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .opening_hours_section_width {
-  max-width: 300px;
-  margin-bottom: 20px;
+  max-width: 500px; /* containeren bliver ikke større end givne værdi */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* 3 kolonner */
+  gap: 5px 20px; /* rækkeafstand, kolonneafstand */
+  line-height: 2.2;
+  align-items: center; /* Centrerer alt indhold lodret i hver grid-række */
 }
 
-hr {
-  width: 20px;
-  color: white;
+.day_time_rows {
+  display: contents; /* gør at child-elementer går direkte ind i grid'et */
+}
+
+.opening_hours_section_width hr {
+  width: 40px; /* længden på stregen */
+  border: 0;
+  border-bottom: 0.5px solid white;
+  margin: 0 auto; /* centrer hr i kolonnen */
 }
 
 .location_opening_backcolor {
@@ -94,7 +95,7 @@ hr {
 }
 
 .location_p {
-  margin-bottom: 10px;
+  line-height: 2.2;
 }
 
 /******** About us section *********************/
@@ -111,7 +112,7 @@ hr {
 
 .about_us_p {
   margin-bottom: 10px;
-  line-height: 1.45;
+  line-height: 2.2;
 }
 
 .about_us_img {
@@ -130,6 +131,7 @@ hr {
   height: 250px;
   padding: 20px 30px;
   background-color: #ffcb57;
+  color: black;
   border-radius: 7px;
   flex-shrink: 0;
   line-height: 1.45;
@@ -165,11 +167,18 @@ hr {
     max-width: 500px;
   }
 
+  .about_us_p {
+    max-width: 500px;
+  }
+
   .about_us_container {
     display: flex;
-    justify-content: center;
+    align-items: center; /* centrer lodret */
+    justify-content: center; /* centrer vandret */
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 80px;
   }
 
   /******* Location section ************/
@@ -184,6 +193,10 @@ hr {
     padding: 50px;
   }
 
+  .opening_hours_section_width {
+    min-width: 350px;
+  }
+
   /******* Forside billede og tekst ************/
   .forside_img {
     height: 630px; /* Fast højde */
@@ -195,6 +208,7 @@ hr {
   .forside_button_margin {
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
   }
 
   .forside_button {
@@ -202,7 +216,11 @@ hr {
     margin: 20px;
   }
 
-  /******** Ratings ****************/
+  /******** Ratings ******************/
+  .ratings_section {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 /**************** FOOTER *********************/
