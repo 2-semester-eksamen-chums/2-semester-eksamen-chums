@@ -1,0 +1,41 @@
+/*************** Reset *********************/
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/********************** DRINKS *******************/
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.menu_left p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.menu_price {
+  white-space: nowrap;
+}
+
+hr {
+  color: white;
+}
+
+.menu_line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #b48484; /* vælg ønsket farve */
+  opacity: 0.5;
+}
