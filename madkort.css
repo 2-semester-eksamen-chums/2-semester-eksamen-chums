@@ -1,0 +1,84 @@
+/*************** Reset *********************/
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************************ FOOD LAYOUT *********************/
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px;
+}
+
+.menu_left {
+  margin: 0;
+  white-space: normal; /* Gør at teksen kan skifte linje*/
+}
+
+.menu_price {
+  white-space: nowrap; /* Gør at teksen ikke skrifter linje*/
+}
+
+.menu_line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ffffff; /* vælg ønsket farve */
+  opacity: 20%;
+}
+
+/***************************** KNAPPER ********************************/
+
+/********** hvide knapper *********/
+.hvid_knap_menu {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 5px;
+  flex: 1;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hvid_knap_menu:hover {
+  transform: scale(1.03);
+}
+
+.menu_knap_flex {
+  display: flex;
+}
+
+/************* Filter knapper ************/
+
+.filter_knap {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px 5px;
+  flex: 1;
+  max-width: 120px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.filter_knap:hover {
+  transform: scale(1.05);
+}
+
+.filter_buttons {
+  display: flex;
+}
