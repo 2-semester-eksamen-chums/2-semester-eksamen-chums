@@ -10,3 +10,172 @@ img {
   height: auto;
   display: block;
 }
+
+/******************************* TEKST **************************/
+
+h1 {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.small_p {
+  color: white; /* vælg ønsket farve */
+  opacity: 80%;
+  white-space: normal;
+}
+
+/***************** BILLEDER *****************/
+.italy_img2 {
+  display: none;
+}
+
+/************************ WINE LAYOUT *********************/
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.menu_left {
+  margin: 0;
+  white-space: normal; /* Gør at teksen kan skifte linje*/
+}
+
+.menu_price {
+  white-space: nowrap; /* Gør at teksen ikke skrifter linje*/
+}
+
+.menu_line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ffffff; /* vælg ønsket farve */
+  opacity: 20%;
+}
+
+/***************************** KNAPPER ********************************/
+
+/********** hvide knapper *********/
+.hvid_knap_menu {
+  background-color: #fdbc28;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 5px;
+  flex: 1;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hvid_knap_menu:hover {
+  background-color: #ffcb57;
+  transform: scale(1.05);
+}
+
+.menu_knap_flex {
+  display: flex;
+}
+
+/************* Filter knapper ************/
+
+.filter_knap {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px 5px;
+  flex: 1;
+  max-width: 140px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.filter_knap:hover {
+  transform: scale(1.05);
+}
+
+.filter_buttons {
+  display: flex;
+}
+
+/************************* DESKTOP ***********************/
+@media (min-width: 768px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .grid_1-1_spain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 50px;
+  }
+  /********* Rhone section *********/
+  .rhone_img1 {
+    margin-top: 40px;
+    max-height: 245px;
+    overflow: hidden; /* skjuler det overskydende af billedet */
+    object-fit: cover;
+  }
+
+  .rhone_img2 {
+    margin-top: 20px;
+  }
+
+  /*********** Italy section ***********/
+  .italy_img1 {
+    max-width: 390px;
+    margin-top: 40px;
+  }
+
+  .italy_img2 {
+    display: block;
+    max-width: 390px;
+    margin-top: 20px;
+  }
+
+  .italy_section {
+    max-width: 700px;
+  }
+
+  /*********** menu section ***********/
+  .menu_section {
+    margin-left: 240px;
+    margin-right: 240px;
+    background-color: #6a1717;
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
+
+  /******* LI & TEKST *******/
+  li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

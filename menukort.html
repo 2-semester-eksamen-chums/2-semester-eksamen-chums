@@ -29,24 +29,24 @@
     </header>
 
     <main>
-        <div>
-            <div class="menu_button">
-                <a class="forside_button_tekst" href="menukort.html">Red Wine</a>
-            </div>
-            <div class="menu_button">
-                <a class="forside_button_tekst" href="madkort.html">Food</a>
-            </div>
-            <div class="menu_button">
-                <a class="forside_button_tekst" href="drinkskort.html">Drinks & Soft drinks</a>
-            </div>
+        <div class="menu_knap_flex">
+            <a class="hvid_knap_menu" href="menukort.html">Wine</a>
+            <a class="hvid_knap_menu" href="madkort.html">Food</a>
+            <a class="hvid_knap_menu" href="drinkskort.html">Drinks & Soft drinks</a>
         </div>
 
-        <h1>Wine Menu</h1>
+        <div class="filter_buttons">
+            <button class="filter_knap">Red Wine</button>
+            <button class="filter_knap">White Wine</button>
+            <button class="filter_knap">Sweet Wine & Rosé</button>
+            <button class="filter_knap">Sparkling</button>
+        </div>
 
         <!-------------------------------------------- WINE MENU --------------------------------------------------------------->
-        <div id="red_wine" class="menu_section">
+        <div class="menu_section">
+            <h1>Wine Menu</h1>
             <!------------------ AUSTRALIA ------------------->
-            <div class="austialia_section">
+            <div>
                 <h2>Austialia</h2>
                 <ul>
                     <li class="menu_item">
@@ -85,7 +85,7 @@
             </div>
 
             <!---------------- BULGARIA ----------------->
-            <div class="bulgaria_section">
+            <div>
                 <h2>Bulgaria</h2>
                 <ul>
                     <li class="menu_item">
@@ -99,7 +99,7 @@
             </div>
 
             <!---------------- FRANCE ----------------->
-            <div class="france_section">
+            <div>
                 <h2>France</h2>
                 <ul>
                     <li class="menu_item">
@@ -136,172 +136,178 @@
 
             <!----------------- IMG ITALY ------------------>
 
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+
+            <div class="grid_1-2">
+                <div>
+                    <img class="italy_img1 " src="img/italy_1.webp" alt="billede af italiensk vinmark og en vin">
+                    <img class="italy_img2 " src="img/italy_2.webp" alt="billede af hånd de rholder en italiensk vin">
+                </div>
+
+                <!--------------- ITALY --------------->
+                <div class="italy_section">
+                    <h2>Italy</h2>
+                    <ul>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Valpolicella Ripasso Cantarelle</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">80/400,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2021 Barbera d’Asti, Bonfante</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">85/420,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2021 Domaine du petit ORATOIRE</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">400,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2019 Giacu, Mandrolisai</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">440,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2021 Appasimento Barbera, Rinaldi</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">480,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2014 Carthago Nero D’Avalo</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">500,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Terra di Confine, Umbrien</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">500,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2012 Taurasi, Cantina Sanpaolo</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">125/550,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Chianti Classico Fioraie, Piemaggio</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">500,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Primivitivo di Manduria, Oro di Eméria</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">125/550,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2019 Cumet, Nebbiolo d’Alba Superiore, Piemonte</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">580,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2015 Barolo del Commune di La Morra</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">150/700,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2020 Barolo, Bonfante & Chiarle</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">750,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2016 Amarone Della Valpolicella Classico</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">100,- DKK</div>
+                        </li>
+
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2014 Orma, Tenuta Sette Ponti</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">1400,- DKK</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <!--------------- ITALY --------------->
-            <div class="italy_section">
-                <h2>Italy</h2>
-                <ul>
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Valpolicella Ripasso Cantarelle</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">80/400,- DKK</div>
-                    </li>
+            <ul>
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>2015 Oremo, Tenuta Sette Ponti</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">1800,- DKK</div>
+                </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2021 Barbera d’Asti, Bonfante</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">85/420,- DKK</div>
-                    </li>
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>2017 Brunello di Montalcino, IL Poggiole</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">700,- DKK</div>
+                </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2021 Domaine du petit ORATOIRE</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">400,- DKK</div>
-                    </li>
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>2009 Barolo Riserva, Elio Sandri</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">1100,- DKK</div>
+                </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2019 Giacu, Mandrolisai</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">440,- DKK</div>
-                    </li>
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>2017 Solaia Marchesi Antinori</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">6600,- DKK</div>
+                </li>
+            </ul>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2021 Appasimento Barbera, Rinaldi</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">480,- DKK</div>
-                    </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2014 Carthago Nero D’Avalo</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">500,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Terra di Confine, Umbrien</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">500,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2012 Taurasi, Cantina Sanpaolo</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">125/550,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Chianti Classico Fioraie, Piemaggio</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">500,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Primivitivo di Manduria, Oro di Eméria</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">125/550,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2019 Cumet, Nebbiolo d’Alba Superiore, Piemonte</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">580,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2015 Barolo del Commune di La Morra</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">150/700,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2020 Barolo, Bonfante & Chiarle</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">750,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2016 Amarone Della Valpolicella Classico</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">100,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2014 Orma, Tenuta Sette Ponti</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">1400,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2015 Oremo, Tenuta Sette Ponti</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">1800,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Brunello di Montalcino, IL Poggiole</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">700,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2009 Barolo Riserva, Elio Sandri</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">1100,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Solaia Marchesi Antinori</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">6600,- DKK</div>
-                    </li>
-                </ul>
-            </div>
 
             <!--------------- LEBANON --------------->
-            <div class="lebanon_section">
+            <div>
                 <h2>Lebanon</h2>
                 <ul>
                     <li>
@@ -367,228 +373,231 @@
             </div>
 
             <!---------------- RHONE ----------------->
-            <div class="rhone_section">
-                <h2>Rhone</h2>
-                <ul>
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2020 Chateauneuf du Pape, Dom de la Charbonniére, Rhone</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">800,- DKK</div>
-                    </li>
+            <div class="grid_1-1">
+                <div class="rhone_section">
+                    <h2>Rhone</h2>
+                    <ul>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2020 Chateauneuf du Pape, Dom de la Charbonniére, Rhone</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">800,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2018 Saint Jean du Barroux, Philippe Gimel</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">110/550,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2018 Saint Jean du Barroux, Philippe Gimel</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">110/550,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Saint Jean du Barroux, Philippe Gimel</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">130/700,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Saint Jean du Barroux, Philippe Gimel</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">130/700,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2016 Phi Ling. Dom. Horgelus</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">450,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2016 Phi Ling. Dom. Horgelus</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">450,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2021 Fleurie, Louis Téte</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">450,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2021 Fleurie, Louis Téte</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">450,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Morgan, Louis Téte</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">450,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Morgan, Louis Téte</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">450,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2022 Bourgogne, Les Brüis, Dom de mauperthuis</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">500,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2022 Bourgogne, Les Brüis, Dom de mauperthuis</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">500,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2022 Bourgogne, grande réserve, Dom de mauperthuis</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">580,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2022 Bourgogne, grande réserve, Dom de mauperthuis</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">580,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2020 Plan De Dieu, Dom Les Aphillanthes</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">90/450,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2020 Plan De Dieu, Dom Les Aphillanthes</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">90/450,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Pomerol Château la Croix St Vincent</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">650,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Pomerol Château la Croix St Vincent</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">650,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2014 Crozes Hermitage Dom. Belle</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">650,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2014 Crozes Hermitage Dom. Belle</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">650,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2011 Cornas Les Eygats, Domaine Courbis</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">950,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2011 Cornas Les Eygats, Domaine Courbis</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">950,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2018 Fixin “Les Petits Crais” Dom. Fournier</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">800,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2018 Fixin “Les Petits Crais” Dom. Fournier</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">800,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2017 Pommard, Dom Chantal Lescure</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">900,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2017 Pommard, Dom Chantal Lescure</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">900,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2015 Chateau Lynch Moussas</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">900,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2015 Chateau Lynch Moussas</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">900,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2016 Hermitage, Domaine Belle Rhone</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">950,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2016 Hermitage, Domaine Belle Rhone</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">950,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>2014 Chamertin Clos de Beze</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">2800,- DKK</div>
-                    </li>
-                </ul>
-            </div>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>2014 Chamertin Clos de Beze</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">2800,- DKK</div>
+                        </li>
+                    </ul>
+                </div>
 
-            <!---------------- IMG RHONE --------------->
+                <!---------------- IMG RHONE --------------->
 
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
+                <div>
+                    <img class="rhone_img1" src="img/druer.webp" alt="billeder af vindruer">
+                    <img class="rhone_img2" src="img/rhone_valley.webp" alt="billede af rhone vinmark">
+                </div>
             </div>
 
             <!-------------- IMG SPAIN -------------->
+            <div class="grid_1-1_spain">
+                <div>
+                    <img src="img/spain.webp" alt="billede af bord med vin og vinkøler">
+                </div>
 
-            <div>
-                <img src="" alt="">
-            </div>
+                <!--------------- SPAIN ------------>
+                <div>
+                    <h2>Spain</h2>
+                    <ul>
+                        <li>
+                            <div class="menu_left">
+                                <p>2017 Marmicas, Ribera del Duero, reserva</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">110/550,- DKK</div>
+                        </li>
 
-            <!--------------- SPAIN ------------>
-            <div>
-                <h2>Spain</h2>
-                <ul>
-                    <li>
-                        <div class="menu_left">
-                            <p>2017 Marmicas, Ribera del Duero, reserva</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">110/550,- DKK</div>
-                    </li>
+                        <li>
+                            <div class="menu_left">
+                                <p>2019 Marmicas de Tomares crianze, Rioja</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">95/450,- DKK</div>
+                        </li>
 
-                    <li>
-                        <div class="menu_left">
-                            <p>2019 Marmicas de Tomares crianze, Rioja</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">95/450,- DKK</div>
-                    </li>
+                        <li>
+                            <div class="menu_left">
+                                <p>2017 Marqués de tomares reserva, Rioja</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">110/500,- DKK</div>
+                        </li>
 
-                    <li>
-                        <div class="menu_left">
-                            <p>2017 Marqués de tomares reserva, Rioja</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">110/500,- DKK</div>
-                    </li>
+                        <li>
+                            <div class="menu_left">
+                                <p>2019 Light my Fife</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">90/450,- DKK</div>
+                        </li>
 
-                    <li>
-                        <div class="menu_left">
-                            <p>2019 Light my Fife</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">90/450,- DKK</div>
-                    </li>
+                        <li>
+                            <div class="menu_left">
+                                <p>2000 Urbina Selecciòn Reserva</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">500,- DKK</div>
+                        </li>
 
-                    <li>
-                        <div class="menu_left">
-                            <p>2000 Urbina Selecciòn Reserva</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">500,- DKK</div>
-                    </li>
+                        <li>
+                            <div class="menu_left">
+                                <p>2019 Altos del Terreal Cuveé Julia Reserva</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">900,- DKK</div>
+                        </li>
 
-                    <li>
-                        <div class="menu_left">
-                            <p>2019 Altos del Terreal Cuveé Julia Reserva</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">900,- DKK</div>
-                    </li>
+                        <li>
+                            <div class="menu_left">
+                                <p>2021 PSI, Ribera del Duero</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">500/1700,- DKK</div>
+                        </li>
 
-                    <li>
-                        <div class="menu_left">
-                            <p>2021 PSI, Ribera del Duero</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">500/1700,- DKK</div>
-                    </li>
-
-                    <li>
-                        <div class="menu_left">
-                            <p>2021 Flor de Pingus</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">3200,- DKK</div>
-                    </li>
-                </ul>
+                        <li>
+                            <div class="menu_left">
+                                <p>2021 Flor de Pingus</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">3200,- DKK</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!------------------ USA ------------------->
@@ -615,12 +624,12 @@
 
             <!------------------ WHITE WINE --------------->
             <div>
-                <h1>White wine</h1>
+                <h2>White wine</h2>
                 <ul>
                     <li>
                         <div class="menu_left">
                             <p>2022 30 Mile Chardonnay -</p>
-                            <p>Crispy, fresh, Australia</p>
+                            <p class="small_p">Crispy, fresh, Australia</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">75/350,- DKK</div>
@@ -629,7 +638,7 @@
                     <li>
                         <div class="menu_left">
                             <p>2024 Hergelus -</p>
-                            <p>Full and distinctive fruit</p>
+                            <p class="small_p">Full and distinctive fruit</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">75/350,- DKK</div>
@@ -646,7 +655,7 @@
                     <li>
                         <div class="menu_left">
                             <p>2020 Orange, Cramele Recas -</p>
-                            <p>Natural orange wine</p>
+                            <p class="small_p">Natural orange wine</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">80/400,- DKK</div>
@@ -655,7 +664,7 @@
                     <li>
                         <div class="menu_left">
                             <p>2022 Piemonte Chardonnay -</p>
-                            <p>Dry</p>
+                            <p.class="small_p">Dry</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">80/400,- DKK</div>
@@ -688,7 +697,7 @@
                     <li>
                         <div class="menu_left">
                             <p>2017 Seven Falls Chardonnay -</p>
-                            <p>Washington State, USA</p>
+                            <p class="small_p">Washington State, USA</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">110/580,- DKK</div>
@@ -884,8 +893,32 @@
             </div>
         </div>
 
-
-
     </main>
+    <footer>
+        <h2>Join our newsletter</h2>
+        <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
 
-    <footer></footer>
+        <form class="sign-up">
+            <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
+            <button class="sign-up-button">Sign up</button>
+        </form>
+
+        <div class="footer-nederst">
+            <div class="kontakt">
+                <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
+                <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
+                <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
+                <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
+            </div>
+
+            <div class="rapport">
+                <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
+                <p>Smiley rapport</p>
+                <p>© 2025 Chums Vinbar & Bistro</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

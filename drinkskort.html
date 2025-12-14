@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="drinkskort.css">
+    <link rel="stylesheet" href="menukort.css">
     <link rel="stylesheet" href="style.css">
     <title>Drinks & Soft drinks</title>
 </head>
@@ -30,23 +30,21 @@
     </header>
     <main>
 
-        <div>
-            <div class="menu_button">
-                <a class="forside_button_tekst" href="menukort.html">Red Wine</a>
-            </div>
-            <div class="menu_button">
-                <a class="forside_button_tekst" href="madkort.html">Food</a>
-            </div>
-            <div class="menu_button">
-                <a class="forside_button_tekst" href="drinkskort.html">Drinks & Soft drinks</a>
-            </div>
+        <div class="menu_knap_flex">
+            <a class="hvid_knap_menu" href="menukort.html">Wine</a>
+            <a class="hvid_knap_menu" href="madkort.html">Food</a>
+            <a class="hvid_knap_menu" href="drinkskort.html">Drinks & Soft drinks</a>
         </div>
 
-        <h1>Drinks & Soft Drinks</h1>
+        <div class="filter_buttons">
+            <button class="filter_knap">Drinks</button>
+            <button class="filter_knap">Soft Drinks</button>
+        </div>
+
 
         <!------------------------------------------- COCKTAILS & SOFT DRINKS MENU ----------------------------------------------------->
         <div id="wine_cocktails" class="menu_section">
-
+            <h1>Drinks & Soft Drinks</h1>
             <!--------------- COCKTAILS --------------->
             <div>
                 <h2>Drinks</h2>
@@ -162,7 +160,7 @@
                     <li>
                         <div class="menu_left">
                             <p>Soft drinks -</p>
-                            <p>Coca Cola, Coca cola zero, Fanta</p>
+                            <p class="small_p">Coca Cola, Coca cola zero, Fanta</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">40,- DKK</div>
@@ -195,7 +193,7 @@
                     <li>
                         <div class="menu_left">
                             <p>Beer 33 cl - Pilsner Classic, Wheat or IPA -</p>
-                            <p>From Møns Bryghus, best micro -brewery in Denmark.</p>
+                            <p class="small_p">From Møns Bryghus, best micro -brewery in Denmark.</p>
                         </div>
                         <hr class="menu_line">
                         <div class="menu_price">65,- DKK</div>
@@ -224,7 +222,31 @@
 
 
     </main>
-    <footer></footer>
+    <footer>
+
+        <h2>Join our newsletter</h2>
+        <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
+
+        <form class="sign-up">
+            <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
+            <button class="sign-up-button">Sign up</button>
+        </form>
+
+        <div class="footer-nederst">
+            <div class="kontakt">
+                <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
+                <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
+                <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
+                <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
+            </div>
+
+            <div class="rapport">
+                <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
+                <p>Smiley rapport</p>
+                <p>© 2025 Chums Vinbar & Bistro</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
