@@ -20,7 +20,7 @@ img {
   text-align: left;
 }
 
-.event-intro h2 {
+.event-intro h1 {
   font-size: 40px;
 }
 
@@ -59,7 +59,7 @@ img {
   }
 }
 
-.events {
+#events {
   display: grid;
   gap: 2rem;
   max-width: 340px;
@@ -100,7 +100,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .events {
+  #events {
     max-width: 1200px;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
