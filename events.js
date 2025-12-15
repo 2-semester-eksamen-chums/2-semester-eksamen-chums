@@ -28,6 +28,7 @@ function showEvents(events) {
   console.log("events", events);
   events.forEach((event) => {
     eventsListContainer.innerHTML += `
+    <a href="produkt.html?id=${event.id}">
        <article class="events">
         <div class="event-produkt">
         <img src="${event.Img}">
@@ -36,20 +37,21 @@ function showEvents(events) {
           <p class="p_events">${event.Eventinfo}</p>
         </div>
       </article> 
+      </a>
     `;
   });
 }
 
-/* Test af vigtige ting */
-const id = 1;
-const elementUrl = `https://qpxfpzldrliwvmichmrh.supabase.co/rest/v1/Events?id=eq.${id}`;
+// /* Test af vigtige ting */
+// const id = 1;
+// const elementUrl = `https://qpxfpzldrliwvmichmrh.supabase.co/rest/v1/Events?id=eq.${id}`;
 
-function getOneElement(url) {
-  fetch(elementUrl, options).then((res) => {
-    res.json().then((data) => {
-      console.log(data[0]);
-    });
-  });
-}
+// function getOneElement(url) {
+//   fetch(elementUrl, options).then((res) => {
+//     res.json().then((data) => {
+//       console.log(data[0]);
+//     });
+//   });
+// }
 
-getOneElement(elementUrl);
+// getOneElement(elementUrl);
