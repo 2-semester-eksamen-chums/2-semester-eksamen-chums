@@ -13,15 +13,12 @@ img {
 /***** events *******/
 
 .event-intro {
-  max-width: 340px;
-  margin: 0 auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
   line-height: 2.2;
   padding-bottom: 30px;
   text-align: left;
-}
-
-.event-intro h1 {
-  font-size: 40px;
 }
 
 /** Vi fjerner billedet KUN i mobil, laver omvendt media query*/
@@ -52,10 +49,6 @@ img {
     width: 100%;
     max-width: 610px;
     object-fit: cover;
-  }
-
-  .event-intro h2 {
-    font-size: 50px;
   }
 }
 
@@ -138,23 +131,15 @@ img {
     min-height: 330px;
   }
 
-  .privat-booking p {
-    font-size: 18px;
-  }
-
   .privat-booking-indhold {
     max-width: 700px;
-  }
-
-  .privat-booking h2 {
-    font-size: 35px;
   }
 }
 
 .booking-knap {
   background-color: #331a1a;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 13px;
   text-align: center;
   margin-top: 27px;
   padding: 15px 37px;
@@ -165,12 +150,6 @@ img {
 
 .booking-knap:hover {
   transform: scale(1.03);
-}
-
-@media (min-width: 768px) {
-  .booking-knap {
-    font-size: 15px;
-  }
 }
 
 /****** GALLERI *****/
