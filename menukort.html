@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menukort.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
     <title>Wine</title>
 </head>
 
@@ -36,18 +44,20 @@
         </div>
 
         <div class="filter_buttons">
-            <button class="filter_knap">Red Wine</button>
-            <button class="filter_knap">White Wine</button>
-            <button class="filter_knap">Sweet Wine & Rosé</button>
-            <button class="filter_knap">Sparkling</button>
+            <button class="filter_knap" data-filter="all">Show all</button>
+            <button class="filter_knap" data-filter="red">Red Wine</button>
+            <button class="filter_knap" data-filter="white">White Wine</button>
+            <button class="filter_knap" data-filter="sweet">Sweet Wine & Rosé</button>
+            <button class="filter_knap" data-filter="sparkling">Sparkling</button>
         </div>
 
         <!-------------------------------------------- WINE MENU --------------------------------------------------------------->
         <div class="menu_section">
             <h1>Wine Menu</h1>
             <!------------------ AUSTRALIA ------------------->
-            <div>
-                <h2>Austialia</h2>
+
+            <div data-wine="red">
+                <h2 class="menu_item">Australia</h2>
                 <ul>
                     <li class="menu_item">
                         <div class="menu_left">
@@ -85,8 +95,8 @@
             </div>
 
             <!---------------- BULGARIA ----------------->
-            <div>
-                <h2>Bulgaria</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">Bulgaria</h2>
                 <ul>
                     <li class="menu_item">
                         <div class="menu_left">
@@ -99,8 +109,8 @@
             </div>
 
             <!---------------- FRANCE ----------------->
-            <div>
-                <h2>France</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">France</h2>
                 <ul>
                     <li class="menu_item">
                         <div class="menu_left">
@@ -121,10 +131,10 @@
             </div>
 
             <!--------------- GERMANY --------------->
-            <div>
-                <h2>Germany</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">Germany</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2018 Böchinger Rosenkrantz, Spätbergunder</p>
                         </div>
@@ -137,15 +147,15 @@
             <!----------------- IMG ITALY ------------------>
 
 
-            <div class="grid_1-2">
-                <div>
-                    <img class="italy_img1 " src="img/italy_1.webp" alt="billede af italiensk vinmark og en vin">
-                    <img class="italy_img2 " src="img/italy_2.webp" alt="billede af hånd de rholder en italiensk vin">
+            <div class="grid_1-2" data-wine="red">
+                <div class="menu_item">
+                    <img class="italy_img1" src="img/italy_1.webp" alt="billede af italiensk vinmark og en vin">
+                    <img class="italy_img2" src="img/italy_2.webp" alt="billede af hånd de rholder en italiensk vin">
                 </div>
 
                 <!--------------- ITALY --------------->
-                <div class="italy_section">
-                    <h2>Italy</h2>
+                <div class="italy_section" data-wine="red">
+                    <h2 class="menu_item">Italy</h2>
                     <ul>
                         <li class="menu_item">
                             <div class="menu_left">
@@ -269,48 +279,48 @@
                     </ul>
                 </div>
             </div>
+            <div data-wine="red">
+                <ul>
+                    <li class="menu_item">
+                        <div class="menu_left">
+                            <p>2015 Oremo, Tenuta Sette Ponti</p>
+                        </div>
+                        <hr class="menu_line">
+                        <div class="menu_price">1800,- DKK</div>
+                    </li>
 
-            <ul>
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>2015 Oremo, Tenuta Sette Ponti</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">1800,- DKK</div>
-                </li>
+                    <li class="menu_item">
+                        <div class="menu_left">
+                            <p>2017 Brunello di Montalcino, IL Poggiole</p>
+                        </div>
+                        <hr class="menu_line">
+                        <div class="menu_price">700,- DKK</div>
+                    </li>
 
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>2017 Brunello di Montalcino, IL Poggiole</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">700,- DKK</div>
-                </li>
+                    <li class="menu_item">
+                        <div class="menu_left">
+                            <p>2009 Barolo Riserva, Elio Sandri</p>
+                        </div>
+                        <hr class="menu_line">
+                        <div class="menu_price">1100,- DKK</div>
+                    </li>
 
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>2009 Barolo Riserva, Elio Sandri</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">1100,- DKK</div>
-                </li>
-
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>2017 Solaia Marchesi Antinori</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">6600,- DKK</div>
-                </li>
-            </ul>
-
+                    <li class="menu_item">
+                        <div class="menu_left">
+                            <p>2017 Solaia Marchesi Antinori</p>
+                        </div>
+                        <hr class="menu_line">
+                        <div class="menu_price">6600,- DKK</div>
+                    </li>
+                </ul>
+            </div>
 
 
             <!--------------- LEBANON --------------->
-            <div>
-                <h2>Lebanon</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">Lebanon</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2021 Héritage, Cht, Plasir du Vin</p>
                         </div>
@@ -318,7 +328,7 @@
                         <div class="menu_price">85/450,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2018 Héritage, Cht, Family Reserve</p>
                         </div>
@@ -329,10 +339,10 @@
             </div>
 
             <!------------- MOLDOVA ------------->
-            <div>
-                <h2>Maldova</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">Maldova</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2019 TE WA, Feteasca Meagra</p>
                         </div>
@@ -340,7 +350,7 @@
                         <div class="menu_price">550,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2020 DIVUS Winery Endemic Blend</p>
                         </div>
@@ -351,10 +361,10 @@
             </div>
 
             <!---------------- ROMANIA -------------->
-            <div>
-                <h2>Romania</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">Romania</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Calusari</p>
                         </div>
@@ -362,7 +372,7 @@
                         <div class="menu_price">75/350,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2019 Glou Glou</p>
                         </div>
@@ -373,9 +383,9 @@
             </div>
 
             <!---------------- RHONE ----------------->
-            <div class="grid_1-1">
+            <div class="grid_1-1" data-wine="red">
                 <div class="rhone_section">
-                    <h2>Rhone</h2>
+                    <h2 class="menu_item">Rhone</h2>
                     <ul>
                         <li class="menu_item">
                             <div class="menu_left">
@@ -524,16 +534,16 @@
             </div>
 
             <!-------------- IMG SPAIN -------------->
-            <div class="grid_1-1_spain">
+            <div class="grid_1-1_spain" data-wine="red">
                 <div>
-                    <img src="img/spain.webp" alt="billede af bord med vin og vinkøler">
+                    <img class="spain_img" src="img/spain.webp" alt="billede af bord med vin og vinkøler">
                 </div>
 
                 <!--------------- SPAIN ------------>
                 <div>
-                    <h2>Spain</h2>
+                    <h2 class="menu_item">Spain</h2>
                     <ul>
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2017 Marmicas, Ribera del Duero, reserva</p>
                             </div>
@@ -541,7 +551,7 @@
                             <div class="menu_price">110/550,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2019 Marmicas de Tomares crianze, Rioja</p>
                             </div>
@@ -549,7 +559,7 @@
                             <div class="menu_price">95/450,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2017 Marqués de tomares reserva, Rioja</p>
                             </div>
@@ -557,7 +567,7 @@
                             <div class="menu_price">110/500,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2019 Light my Fife</p>
                             </div>
@@ -565,7 +575,7 @@
                             <div class="menu_price">90/450,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2000 Urbina Selecciòn Reserva</p>
                             </div>
@@ -573,7 +583,7 @@
                             <div class="menu_price">500,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2019 Altos del Terreal Cuveé Julia Reserva</p>
                             </div>
@@ -581,7 +591,7 @@
                             <div class="menu_price">900,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2021 PSI, Ribera del Duero</p>
                             </div>
@@ -589,7 +599,7 @@
                             <div class="menu_price">500/1700,- DKK</div>
                         </li>
 
-                        <li>
+                        <li class="menu_item">
                             <div class="menu_left">
                                 <p>2021 Flor de Pingus</p>
                             </div>
@@ -601,10 +611,10 @@
             </div>
 
             <!------------------ USA ------------------->
-            <div>
-                <h2>USA</h2>
+            <div data-wine="red">
+                <h2 class="menu_item">USA</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2017 Seven Falls Merlot</p>
                         </div>
@@ -612,7 +622,7 @@
                         <div class="menu_price">480,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2017 Joseph Phelps, Carbernet Sauvignon</p>
                         </div>
@@ -622,11 +632,13 @@
                 </ul>
             </div>
 
+
             <!------------------ WHITE WINE --------------->
+
             <div>
-                <h2>White wine</h2>
+                <h2 class="menu_item">White wine</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 30 Mile Chardonnay -</p>
                             <p class="small_p">Crispy, fresh, Australia</p>
@@ -635,7 +647,7 @@
                         <div class="menu_price">75/350,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2024 Hergelus -</p>
                             <p class="small_p">Full and distinctive fruit</p>
@@ -644,7 +656,7 @@
                         <div class="menu_price">75/350,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2023 Lustig Grüner Veltliner</p>
                         </div>
@@ -652,7 +664,7 @@
                         <div class="menu_price">80/380,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2020 Orange, Cramele Recas -</p>
                             <p class="small_p">Natural orange wine</p>
@@ -661,7 +673,7 @@
                         <div class="menu_price">80/400,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Piemonte Chardonnay -</p>
                             <p.class="small_p">Dry</p>
@@ -670,7 +682,7 @@
                         <div class="menu_price">80/400,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Riesling Gleisweller</p>
                         </div>
@@ -678,7 +690,7 @@
                         <div class="menu_price">90/450,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Beaujolais Blanc</p>
                         </div>
@@ -686,7 +698,7 @@
                         <div class="menu_price">100/550,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Montunal Lugana</p>
                         </div>
@@ -694,7 +706,7 @@
                         <div class="menu_price">90/450,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2017 Seven Falls Chardonnay -</p>
                             <p class="small_p">Washington State, USA</p>
@@ -703,7 +715,7 @@
                         <div class="menu_price">110/580,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Puilly Funé</p>
                         </div>
@@ -711,7 +723,7 @@
                         <div class="menu_price">100/500,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Sancerre Blanc</p>
                         </div>
@@ -719,7 +731,7 @@
                         <div class="menu_price">110/550,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2023 Chablis Domaine Agnés et Didler Dauvissat</p>
                         </div>
@@ -727,7 +739,7 @@
                         <div class="menu_price">100/550,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2020 Chateauneuf du Pape Blanc</p>
                         </div>
@@ -735,7 +747,7 @@
                         <div class="menu_price">700,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2019 Cht. Larrivet</p>
                         </div>
@@ -743,7 +755,7 @@
                         <div class="menu_price">800,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2017 Hermitage Blanc</p>
                         </div>
@@ -755,9 +767,9 @@
 
             <!------------------ ROSE --------------->
             <div>
-                <h2>Rosé</h2>
+                <h2 class="menu_item">Rosé</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2023 Lustig Zweigit</p>
                         </div>
@@ -765,7 +777,7 @@
                         <div class="menu_price">80/380,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Horgelus Rosé</p>
                         </div>
@@ -773,7 +785,7 @@
                         <div class="menu_price">75/350,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Calusari Pinot Noir Rozé</p>
                         </div>
@@ -781,7 +793,7 @@
                         <div class="menu_price">75/350,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2022 Audace</p>
                         </div>
@@ -792,10 +804,11 @@
             </div>
 
             <!------------------ SWEET WINE --------------->
+
             <div>
-                <h2>Sweet wine</h2>
+                <h2 class="menu_item">Sweet wine</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Rosé Sequeirinha Vinho do Porte</p>
                         </div>
@@ -803,7 +816,7 @@
                         <div class="menu_price">80/300,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2013 Les Remparts de Bastor Lamontagne,
                                 Sauternes 375 ml</p>
@@ -812,7 +825,7 @@
                         <div class="menu_price">380,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2013 Vintage Port Quinta de Infantando</p>
                         </div>
@@ -820,7 +833,7 @@
                         <div class="menu_price">300,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Pineau des Chrantes blanc</p>
                         </div>
@@ -828,7 +841,7 @@
                         <div class="menu_price">80/440,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Ruby Port Quinta do Infantado</p>
                         </div>
@@ -836,7 +849,7 @@
                         <div class="menu_price">80/450,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2013 LBV Quinta do Infantado</p>
                         </div>
@@ -844,7 +857,7 @@
                         <div class="menu_price">120/720,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Tawny 10 Anos Quinta do Infantado</p>
                         </div>
@@ -855,10 +868,11 @@
             </div>
 
             <!------------------- SPARKLING ----------------->
+
             <div>
-                <h2>Sparkling</h2>
+                <h2 class="menu_item">Sparkling</h2>
                 <ul>
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Cava Dominio de Requena Brut</p>
                         </div>
@@ -866,7 +880,7 @@
                         <div class="menu_price">80/400,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>2021 Matiu Brut Prosecco</p>
                         </div>
@@ -874,7 +888,7 @@
                         <div class="menu_price">90/450,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Champagne Ler Cru, Lombard</p>
                         </div>
@@ -882,7 +896,7 @@
                         <div class="menu_price">130/650,- DKK</div>
                     </li>
 
-                    <li>
+                    <li class="menu_item">
                         <div class="menu_left">
                             <p>Champgane, Lombard Rosé</p>
                         </div>
@@ -892,6 +906,7 @@
                 </ul>
             </div>
         </div>
+
 
     </main>
     <footer>
@@ -918,7 +933,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.filter_knap');
+            const sections = document.querySelectorAll('[data-wine]');
 
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.dataset.filter;
+
+                    sections.forEach(section => {
+                        if (filter === 'all' || section.dataset.wine === filter) {
+                            section.classList.remove('hidden');
+                        } else {
+                            section.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>
