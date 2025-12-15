@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menukort.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
     <title>Food</title>
 </head>
 
@@ -46,7 +54,7 @@
 
 
         <!------------------------------------------- FOOD MENU ----------------------------------------------------------->
-        <div id="food" class="menu_section">
+        <div class="menu_section">
             <h1>Food Menu</h1>
             <!------------------- SNACKS ------------------->
             <div class="snacks_section">
@@ -86,51 +94,56 @@
                 </ul>
             </div>
 
-            <!----------------- WARM CHEESE ------------------->
-            <div class="warm_cheese_section">
-                <h2>WARM CHEESE</h2>
-                <ul>
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Cheese fondue -</p>
-                            <p class="small_p">200g per person (min 2 portions)</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">170,- DKK</div>
-                    </li>
+            <!------------------ IMG -------------->
+            <div class="grid_1-1_cheese">
+                <div>
+                    <img class="cheese_img" src="img/menukort2.webp" alt="billede af ostefondue">
+                </div>
+                <!----------------- WARM CHEESE ------------------->
+                <div class="warm_cheese_section">
+                    <h2>WARM CHEESE</h2>
+                    <ul>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Cheese fondue -</p>
+                                <p class="small_p">200g per person (min 2 portions)</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">170,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Mont d’Or - 400g -</p>
-                            <p class="small_p">A soft rich seasonal cheese made from cow’s milk. Baked in itøs own
-                                wooden box and eaten
-                                like
-                                fondus</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">340,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Mont d’Or - 400g -</p>
+                                <p class="small_p">A soft rich seasonal cheese made from cow’s milk. Baked in itøs own
+                                    wooden box and eaten
+                                    like
+                                    fondus</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">340,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Chums baked camembert -</p>
-                            <p class="small_p">Garlic/thyme or Honey/nuts</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">220,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Chums baked camembert -</p>
+                                <p class="small_p">Garlic/thyme or Honey/nuts</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">220,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Chaumes le crémier -</p>
-                            <p class="small_p">250g: Baked french red washed rind cheese with garlic and thyme</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">220,- DKK</div>
-                    </li>
-                </ul>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Chaumes le crémier -</p>
+                                <p class="small_p">250g: Baked french red washed rind cheese with garlic and thyme</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">220,- DKK</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
 
             <!--------------- CHARCUTERIE ------------------->
             <div class="charcuterie_section">
@@ -198,105 +211,114 @@
             </div>
 
             <!------------------- OTHERS ---------------->
-            <div class="others_section">
-                <h2>OTHERS</h2>
-                <ul>
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Foie gras de la mer -</p>
-                            <p class="small_p">Monkfish liver with seaweed salad on oasted rye bread</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">120,- DKK</div>
-                    </li>
+            <div class="grid_1-1_others">
+                <div class="others_section">
+                    <h2>OTHERS</h2>
+                    <ul>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Foie gras de la mer -</p>
+                                <p class="small_p">Monkfish liver with seaweed salad on oasted rye bread</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">120,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Salmon -</p>
-                            <p class="small_p">Faroese cold-smoked salmon on toasted rye bread</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">140,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Salmon -</p>
+                                <p class="small_p">Faroese cold-smoked salmon on toasted rye bread</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">140,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Chevre chaud -</p>
-                            <p class="small_p">On salad with semi-dried tomatoes</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">110,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Chevre chaud -</p>
+                                <p class="small_p">On salad with semi-dried tomatoes</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">110,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Burrata -</p>
-                            <p class="small_p">With grilled courgettes</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">130,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Burrata -</p>
+                                <p class="small_p">With grilled courgettes</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">130,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Tarte flambée Classique -</p>
-                            <p class="small_p">With bacon</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">95,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Tarte flambée Classique -</p>
+                                <p class="small_p">With bacon</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">95,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Tarte flambée Forestiéré -</p>
-                            <p class="small_p">With mushrooms, cheese and thyme</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">95,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Tarte flambée Forestiéré -</p>
+                                <p class="small_p">With mushrooms, cheese and thyme</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">95,- DKK</div>
+                        </li>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Tarte flambée Pissaladiére -</p>
-                            <p class="small_p">With anchovies and black olives</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">95,- DKK</div>
-                    </li>
+                        <li class="menu_item">
+                            <div class="menu_left">
+                                <p>Tarte flambée Pissaladiére -</p>
+                                <p class="small_p">With anchovies and black olives</p>
+                            </div>
+                            <hr class="menu_line">
+                            <div class="menu_price">95,- DKK</div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img class="tapas_img" src="img/menukort1.webp" alt="billede af brød, tapas og ost">
+                </div>
 
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Antipasti -</p>
-                            <p class="small_p">Parmigiano reggiano 24 months, Serrano ham, truffle salami and grilled
-                                courgettes with
-                                semi-dried tomatoes and Greek
-                                olives.</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">230,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>4 Tapas -</p>
-                            <p class="small_p">North Sea cheese, goat gouda, serrano ham and fennel salami</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">230,- DKK</div>
-                    </li>
-
-                    <li class="menu_item">
-                        <div class="menu_left">
-                            <p>Cheese with Accesories -</p>
-                            <p class="small_p">Choose one of the following: North sea cheese, 24 moonths Comté, Goat
-                                gouda, manchego,
-                                Camembert and roquefort</p>
-                        </div>
-                        <hr class="menu_line">
-                        <div class="menu_price">90,- DKK</div>
-                    </li>
-                </ul>
             </div>
+
+            <ul>
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>Antipasti -</p>
+                        <p class="small_p">Parmigiano reggiano 24 months, Serrano ham, truffle salami and grilled
+                            courgettes with
+                            semi-dried tomatoes and Greek
+                            olives.</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">230,- DKK</div>
+                </li>
+
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>4 Tapas -</p>
+                        <p class="small_p">North Sea cheese, goat gouda, serrano ham and fennel salami</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">230,- DKK</div>
+                </li>
+
+                <li class="menu_item">
+                    <div class="menu_left">
+                        <p>Cheese with Accesories -</p>
+                        <p class="small_p">Choose one of the following: North sea cheese, 24 moonths Comté, Goat
+                            gouda, manchego,
+                            Camembert and roquefort</p>
+                    </div>
+                    <hr class="menu_line">
+                    <div class="menu_price">90,- DKK</div>
+                </li>
+            </ul>
+
 
             <!-------------- DESSERT ----------->
             <div class="dessert_section">
