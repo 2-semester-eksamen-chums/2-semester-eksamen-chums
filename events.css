@@ -77,19 +77,19 @@ img {
 }
 
 .h3_events {
-  font-size: 26px;
+  font-size: 1.2rem;
   padding-top: 10px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .h4_events {
-  font-size: 15px;
-  font-weight: lighter;
+  font-size: 0.9rem;
+  font-weight: 100;
 }
 
 .p_events {
-  font-size: 15px;
-  font-weight: lighter;
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 @media (min-width: 768px) {
@@ -123,6 +123,13 @@ img {
 
 .privat-booking-indhold p {
   padding: 5px;
+  color: #331a1a;
+  font-weight: 350;
+}
+
+.privat-booking-indhold h2 {
+  color: #331a1a;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -134,15 +141,18 @@ img {
   .privat-booking-indhold {
     max-width: 700px;
   }
+
+  .privat-booking-indhold h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .booking-knap {
   background-color: #331a1a;
   cursor: pointer;
-  border-radius: 13px;
   text-align: center;
   margin-top: 27px;
-  padding: 15px 37px;
+  padding: 10px 37px;
   border: 1px;
   color: white;
   transition: transform 0.3s ease;
@@ -166,5 +176,9 @@ img {
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
     gap: 30px;
+  }
+
+  .booking-knap {
+    padding: 12px 50px;
   }
 }

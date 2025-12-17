@@ -27,17 +27,37 @@ img {
   color: white;
 }
 
+.forside_h1 {
+  font-size: 3rem;
+}
+
+.forside_h2 {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  .forside_h1 {
+    font-size: 4.8rem;
+  }
+
+  .forside_h2 {
+    font-size: 2rem;
+  }
+}
+
 /****** Buttons ****************/
 .forside_button {
   background-color: #fdbc28;
   cursor: pointer;
-  border-radius: 13px;
+  border-radius: 7px;
   text-align: center;
   padding: 10px 0; /* Fjern den horisontale padding */
   flex: 1; /* Gør knappen fleksibel og fylder lige meget */
   margin: 10px;
   text-decoration: none;
   color: black;
+  font-size: 0.7rem;
 }
 
 .forside_button:hover {
@@ -59,6 +79,19 @@ img {
   margin-right: 15px;
 }
 
+@media (min-width: 768px) {
+  .forside_button {
+    flex: none;
+    width: auto;
+    min-width: 250px;
+    font-size: 0.9rem;
+  }
+
+  .forside_button_margin {
+    gap: 40px;
+  }
+}
+
 /****** Opening hours section + location section *************/
 
 .opening_hours_section_width {
@@ -68,6 +101,7 @@ img {
   gap: 5px 20px; /* rækkeafstand, kolonneafstand */
   line-height: 2.2;
   align-items: center; /* Centrerer alt indhold lodret i hver grid-række*/
+  margin-bottom: 30px;
 }
 
 .day_time_rows {
@@ -103,7 +137,7 @@ img {
 /******** About us section *********************/
 .about_us_section {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -133,7 +167,6 @@ img {
   height: 250px;
   padding: 20px 30px;
   background-color: #ffcb57;
-  color: black;
   border-radius: 7px;
   flex-shrink: 0;
   line-height: 1.45;
@@ -144,6 +177,10 @@ img {
   justify-content: center; /* centrer vandret */
 }
 
+.rating_scroll :hover {
+  background-color: #fde38a;
+}
+
 .rating_scroll {
   display: flex;
   gap: 10px; /* afstand mellem boksene */
@@ -151,6 +188,10 @@ img {
   padding: 20px 0; /* plads over/under */
   scroll-behavior: smooth; /* lækker smooth scrolling */
   white-space: normal; /* g'r at teksten bliver liggende inde i boksene */
+}
+
+.rating_scroll p {
+  color: black;
 }
 
 /******************** DESKTOP *******************************************************************************/
@@ -214,7 +255,6 @@ img {
   }
 
   .forside_button {
-    padding: 15px 0;
     margin: 20px;
   }
 
