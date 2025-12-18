@@ -112,6 +112,8 @@ img {
   background-color: #fdbc28;
   padding: 20px;
   color: #331a1a;
+  width: 100vw; /*Gør billedet ligeså bred som hele skærmen*/
+  margin-left: calc(50% - 50vw); /*billedet bliver centreret ift. skærmen og ikke main*/
 }
 
 .privat-booking-indhold {

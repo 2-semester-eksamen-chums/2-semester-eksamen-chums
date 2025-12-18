@@ -21,6 +21,12 @@ body {
 html {
   background-color: white;
 }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /***************** FONTE ****************/
 .anton-regular {
   font-family: "Anton", sans-serif;
@@ -96,6 +102,30 @@ a {
 
 a:hover {
   transform: scale(1.03);
+}
+
+/******************* FORSIDE KNAP og MENU KNAP ****************/
+
+.forside_button {
+  background-color: #fdbc28;
+  cursor: pointer;
+  border-radius: 7px;
+  text-align: center;
+  padding: 10px 0; /* Fjern den horisontale padding */
+  flex: 1; /* Gør knappen fleksibel og fylder lige meget */
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .forside_button {
+    flex: none;
+    width: auto;
+    min-width: 250px;
+    font-size: 0.9rem;
+  }
 }
 
 /******************** MENU ************************************/
@@ -294,9 +324,9 @@ footer h3 {
   transform: scale(1.03);
 }
 
-.kontakt {
+.kontakt p {
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 0.9rem;
 }
 
 .kontakt a {
@@ -308,16 +338,15 @@ footer h3 {
   color: #ffcb57;
 }
 
-.rapport {
-  font-size: 13px;
-  padding-top: 50px;
+.rapport p {
+  font-size: 0.9rem;
   line-height: 1.8;
-  font-weight: 100;
 }
 
 .rapport img {
   max-width: 30px;
   margin-bottom: 5px;
+  margin-top: 50px;
 }
 
 @media (min-width: 768px) {
