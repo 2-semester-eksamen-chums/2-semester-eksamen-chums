@@ -100,12 +100,7 @@ button:hover {
 a {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 750;
-  /* transition: transform 0.3s ease; */
 }
-
-/* a:hover {
-  transform: scale(1.05);
-} */
 
 /******************* FORSIDE KNAP og MENU KNAP ****************/
 

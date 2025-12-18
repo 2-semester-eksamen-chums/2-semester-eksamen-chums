@@ -1,7 +1,6 @@
 console.log("produkt loaded...");
 
 const id = new URLSearchParams(window.location.search).get("id");
-// const id = 1;
 
 const productUrl = `https://qpxfpzldrliwvmichmrh.supabase.co/rest/v1/Produkt?id=eq.${id}`;
 
