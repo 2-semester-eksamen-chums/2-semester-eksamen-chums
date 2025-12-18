@@ -48,6 +48,7 @@ h1 {
   font-size: 2.3rem;
   font-weight: 100;
   color: white;
+  opacity: 90%;
 }
 
 h2 {
@@ -55,6 +56,7 @@ h2 {
   letter-spacing: 2%;
   font-size: 1.6rem;
   color: white;
+  opacity: 90%;
 }
 
 h3 {
@@ -66,6 +68,7 @@ p {
   font-weight: 100;
   font-size: 1rem;
   color: white;
+  opacity: 80%;
 }
 
 button {
@@ -91,33 +94,20 @@ button {
 }
 
 button:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 a {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 750;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
 
-a:hover {
-  transform: scale(1.03);
-}
+/* a:hover {
+  transform: scale(1.05);
+} */
 
 /******************* FORSIDE KNAP og MENU KNAP ****************/
-
-.forside_button {
-  background-color: #fdbc28;
-  cursor: pointer;
-  border-radius: 7px;
-  text-align: center;
-  padding: 10px 0; /* Fjern den horisontale padding */
-  flex: 1; /* Gør knappen fleksibel og fylder lige meget */
-  margin: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 0.7rem;
-}
 
 @media (min-width: 768px) {
   .forside_button {
@@ -296,7 +286,8 @@ footer h3 {
 }
 
 .sign-up {
-  padding-block: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .search-input {
@@ -320,7 +311,7 @@ footer h3 {
 }
 
 .sign-up-button:hover {
-  background-color: #ffcb57;
+  background-color: #fde38a;
   transform: scale(1.03);
 }
 
