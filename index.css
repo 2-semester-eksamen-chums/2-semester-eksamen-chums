@@ -27,17 +27,37 @@ img {
   color: white;
 }
 
+.forside_h1 {
+  font-size: 3rem;
+}
+
+.forside_h2 {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  .forside_h1 {
+    font-size: 4.8rem;
+  }
+
+  .forside_h2 {
+    font-size: 2rem;
+  }
+}
+
 /****** Buttons ****************/
 .forside_button {
   background-color: #fdbc28;
   cursor: pointer;
-  border-radius: 13px;
+  border-radius: 7px;
   text-align: center;
   padding: 10px 0; /* Fjern den horisontale padding */
   flex: 1; /* Gør knappen fleksibel og fylder lige meget */
   margin: 10px;
   text-decoration: none;
   color: black;
+  font-size: 0.7rem;
 }
 
 .forside_button:hover {
@@ -59,6 +79,19 @@ img {
   margin-right: 15px;
 }
 
+@media (min-width: 768px) {
+  .forside_button {
+    flex: none;
+    width: auto;
+    min-width: 250px;
+    font-size: 0.9rem;
+  }
+
+  .forside_button_margin {
+    gap: 40px;
+  }
+}
+
 /****** Opening hours section + location section *************/
 
 .opening_hours_section_width {
@@ -68,6 +101,7 @@ img {
   gap: 5px 20px; /* rækkeafstand, kolonneafstand */
   line-height: 2.2;
   align-items: center; /* Centrerer alt indhold lodret i hver grid-række*/
+  margin-bottom: 30px;
 }
 
 .day_time_rows {
@@ -84,7 +118,7 @@ img {
 .location_opening_backcolor {
   background-color: #6a1717;
   color: white;
-  padding: 25px 45px 30px 45px;
+  padding: 15px 45px 30px 45px;
 }
 
 .opening_h2 {
@@ -103,9 +137,9 @@ img {
 /******** About us section *********************/
 .about_us_section {
   margin-top: 30px;
-  margin-bottom: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
+  margin-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about_us_h2 {
@@ -118,8 +152,8 @@ img {
 }
 
 .about_us_img {
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /********* Ratings ***************************/
@@ -133,7 +167,6 @@ img {
   height: 250px;
   padding: 20px 30px;
   background-color: #ffcb57;
-  color: black;
   border-radius: 7px;
   flex-shrink: 0;
   line-height: 1.45;
@@ -144,6 +177,10 @@ img {
   justify-content: center; /* centrer vandret */
 }
 
+.rating_scroll :hover {
+  background-color: #fde38a;
+}
+
 .rating_scroll {
   display: flex;
   gap: 10px; /* afstand mellem boksene */
@@ -151,6 +188,10 @@ img {
   padding: 20px 0; /* plads over/under */
   scroll-behavior: smooth; /* lækker smooth scrolling */
   white-space: normal; /* g'r at teksten bliver liggende inde i boksene */
+}
+
+.rating_scroll p {
+  color: black;
 }
 
 /******************** DESKTOP *******************************************************************************/
@@ -214,7 +255,6 @@ img {
   }
 
   .forside_button {
-    padding: 15px 0;
     margin: 20px;
   }
 
@@ -222,5 +262,117 @@ img {
   .ratings_section {
     margin-left: 100px;
     margin-right: 100px;
+  }
+}
+
+/**************** FOOTER *********************/
+
+footer {
+  background-color: #331a1a;
+  color: #d6d6d6;
+  text-align: left;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 20px auto;
+}
+
+footer h3 {
+  font-size: 16px;
+  max-width: 300px;
+  line-height: 1.7;
+  font-weight: lighter;
+}
+
+.sign-up {
+  padding: 25px;
+}
+
+.search-input {
+  min-width: 290px;
+  padding: 15px;
+  font-size: 11px;
+  border: 1px;
+  border-radius: 20px;
+}
+
+.sign-up-button {
+  background-color: #fdbc28;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+  border: 1px;
+}
+
+.sign-up-button:hover {
+  background-color: #ffcb57;
+  transform: scale(1.03);
+}
+
+.kontakt {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.kontakt a {
+  color: #d6d6d6;
+  text-decoration: underline;
+}
+
+.kontakt a:hover {
+  color: #ffcb57; /* change to your desired hover color */
+}
+
+.rapport {
+  font-size: 13px;
+  padding-top: 50px;
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+.rapport img {
+  max-width: 30px;
+}
+
+@media (min-width: 768px) {
+  .search-input {
+    min-width: 490px;
+    font-size: 14px;
+  }
+
+  .sign-up-button {
+    padding: 15px 40px;
+    font-size: 14px;
+  }
+
+  .sign-up {
+    padding-top: 25px;
+  }
+
+  .kontakt {
+    font-size: 15px;
+  }
+
+  .footer-nederst {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .rapport {
+    text-align: right;
+    font-size: 15px;
+  }
+
+  .rapport img {
+    max-width: 45px;
+    display: block;
+    margin: 0 0 0 auto;
   }
 }

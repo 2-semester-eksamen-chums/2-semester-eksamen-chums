@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menukort.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="menukort.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
     <title>Food</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <a href="index.html">
-            <img src="img/logo.webp" alt="Logo" class="logo" />
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="menukort.html">Menu</a></li>
-                <li><a href="bord.html">Booking</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      <a href="index.html">
+        <img src="img/logo.webp" alt="Logo" class="logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="menukort.html" class="nav-link active">Menu</a></li>
+          <li><a href="bord.html">Booking</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <main>
 
@@ -278,45 +274,160 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <img class="tapas_img" src="img/menukort1.webp" alt="billede af brød, tapas og ost">
+                <hr class="menu_line" />
+                <div class="menu_price">220,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Chaumes le crémier -</p>
+                  <p class="small_p">250g: Baked french red washed rind cheese with garlic and thyme</p>
                 </div>
-
-            </div>
-
-            <ul>
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>Antipasti -</p>
-                        <p class="small_p">Parmigiano reggiano 24 months, Serrano ham, truffle salami and grilled
-                            courgettes with
-                            semi-dried tomatoes and Greek
-                            olives.</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">230,- DKK</div>
-                </li>
-
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>4 Tapas -</p>
-                        <p class="small_p">North Sea cheese, goat gouda, serrano ham and fennel salami</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">230,- DKK</div>
-                </li>
-
-                <li class="menu_item">
-                    <div class="menu_left">
-                        <p>Cheese with Accesories -</p>
-                        <p class="small_p">Choose one of the following: North sea cheese, 24 moonths Comté, Goat
-                            gouda, manchego,
-                            Camembert and roquefort</p>
-                    </div>
-                    <hr class="menu_line">
-                    <div class="menu_price">90,- DKK</div>
-                </li>
+                <hr class="menu_line" />
+                <div class="menu_price">220,- DKK</div>
+              </li>
             </ul>
+          </div>
+        </div>
+
+        <!--------------- CHARCUTERIE ------------------->
+        <div class="charcuterie_section">
+          <h2>CHARCUTERIE</h2>
+
+          <ul>
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>3 tapas -</p>
+                <p class="small_p">Bresaola, Serrano ham and fennel salami</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">230,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Bresaola -</p>
+                <p class="small_p">With lemon, olive oil and 24 months parmesan</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">150,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Iberico de Cebo</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">150,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Fennel salami</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">90,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Serrano ham 12 months</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">90,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Truffle salami</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">90,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Duck liver mousse</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">110,- DKK</div>
+            </li>
+          </ul>
+        </div>
+
+        <!------------------- OTHERS ---------------->
+        <div class="grid_1-1_others">
+          <div class="others_section">
+            <h2>OTHERS</h2>
+            <ul>
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Foie gras de la mer -</p>
+                  <p class="small_p">Monkfish liver with seaweed salad on oasted rye bread</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">120,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Salmon -</p>
+                  <p class="small_p">Faroese cold-smoked salmon on toasted rye bread</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">140,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Chevre chaud -</p>
+                  <p class="small_p">On salad with semi-dried tomatoes</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">110,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Burrata -</p>
+                  <p class="small_p">With grilled courgettes</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">130,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Tarte flambée Classique -</p>
+                  <p class="small_p">With bacon</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">95,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Tarte flambée Forestiéré -</p>
+                  <p class="small_p">With mushrooms, cheese and thyme</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">95,- DKK</div>
+              </li>
+
+              <li class="menu_item">
+                <div class="menu_left">
+                  <p>Tarte flambée Pissaladiére -</p>
+                  <p class="small_p">With anchovies and black olives</p>
+                </div>
+                <hr class="menu_line" />
+                <div class="menu_price">95,- DKK</div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img class="tapas_img" src="img/menukort1.webp" alt="billede af brød, tapas og ost" />
+          </div>
+        </div>
 
 
             <!-------------- DESSERT ----------->
@@ -341,34 +452,58 @@
                     </li>
                 </ul>
             </div>
-        </div>
+            <hr class="menu_line" />
+            <div class="menu_price">90,- DKK</div>
+          </li>
+        </ul>
 
+        <!-------------- DESSERT ----------->
+        <div class="dessert_section">
+          <h2>DESSERT</h2>
+          <ul>
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>8 french truffle chocolates</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">60,- DKK</div>
+            </li>
+
+            <li class="menu_item">
+              <div class="menu_left">
+                <p>Pecan caramel brownie -</p>
+                <p class="small_p">With vanilla ice cream</p>
+              </div>
+              <hr class="menu_line" />
+              <div class="menu_price">90,- DKK</div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer>
-        <h2>Join our newsletter</h2>
-        <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
+      <h2>Join our newsletter</h2>
+      <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
 
-        <form class="sign-up">
-            <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
-            <button class="sign-up-button">Sign up</button>
-        </form>
+      <form class="sign-up">
+        <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
+        <button class="sign-up-button">Sign up</button>
+      </form>
 
-        <div class="footer-nederst">
-            <div class="kontakt">
-                <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
-                <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
-                <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
-                <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
-            </div>
-
-            <div class="rapport">
-                <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
-                <p>Smiley rapport</p>
-                <p>© 2025 Chums Vinbar & Bistro</p>
-            </div>
+      <div class="footer-nederst">
+        <div class="kontakt">
+          <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
+          <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
+          <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
+          <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
         </div>
+
+        <div class="rapport">
+          <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
+          <p>Smiley rapport</p>
+          <p>© 2025 Chums Vinbar & Bistro</p>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

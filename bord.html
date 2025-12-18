@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book bord</title>
-    <link rel="stylesheet" href="bord.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="bord.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <img src="img/logo.webp" alt="Logo" class="logo" />
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="menukort.html">Menu</a></li>
-                <li><a href="bord.html">Booking</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      <a href="index.html">
+        <img src="img/logo.webp" alt="Logo" class="logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="menukort.html">Menu</a></li>
+          <li><a href="bord.html" class="nav-link active">Booking</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <main>
-        <h1 class="bord_h1">Book a table</h1>
-        <div class="grid_1_1_bord">
-            <div class="hvid_baggrund_bord">
-                <div class="bord_step">
-                    <div>
-                        <p class="step_1">1</p>
-                        <p>Guests</p>
-                    </div>
-                    <div>
-                        <p class="step_234">2</p>
-                        <p>Date</p>
-                    </div>
-                    <div>
-                        <p class="step_234">3</p>
-                        <p>Time</p>
-                    </div>
-                    <div>
-                        <p class="step_234">4</p>
-                        <p>Confirm</p>
-                    </div>
-                </div>
-                <h2>How many guests?</h2>
-                <div class="bord_knapper">
-                    <button class="knap_rund">1</button>
-                    <button class="knap_rund">2</button>
-                    <button class="knap_rund">3</button>
-                    <button class="knap_rund">4</button>
-                    <button class="knap_rund">5</button>
-                    <button class="knap_rund">6</button>
-                    <button class="knap_rund">7</button>
-                    <button class="knap_rund">8</button>
-
-                </div>
-                <p class="p_over8">Please call to reserve for groups over eight</p>
+      <h1 class="bord_h1">Book a table</h1>
+      <div class="grid_1_1_bord">
+        <div class="hvid_baggrund_bord">
+          <div class="bord_step">
+            <div>
+              <p class="step_1">1</p>
+              <p class="grey">Guests</p>
             </div>
-            <div class="bookbord_img">
-                <img src="./img/galleri6.webp" alt="winebar">
+            <div>
+              <p class="step_234">2</p>
+              <p class="grey">Date</p>
             </div>
+            <div>
+              <p class="step_234">3</p>
+              <p class="grey">Time</p>
+            </div>
+            <div>
+              <p class="step_234">4</p>
+              <p class="grey">Confirm</p>
+            </div>
+          </div>
+          <h2 class="black">How many guests?</h2>
+          <div class="bord_knapper">
+            <button class="knap_rund">1</button>
+            <button class="knap_rund">2</button>
+            <button class="knap_rund">3</button>
+            <button class="knap_rund">4</button>
+            <button class="knap_rund">5</button>
+            <button class="knap_rund">6</button>
+            <button class="knap_rund">7</button>
+            <button class="knap_rund">8</button>
+          </div>
+          <p class="p_over8">Please call to reserve for groups over eight</p>
         </div>
+        <div class="bookbord_img">
+          <img src="./img/galleri6.webp" alt="winebar" />
+        </div>
+      </div>
     </main>
     <footer>
-        <h2>Join our newsletter</h2>
-        <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
+      <h2>Join our newsletter</h2>
+      <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
 
-        <form class="sign-up">
-            <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
-            <button class="sign-up-button">Sign up</button>
-        </form>
+      <form class="sign-up">
+        <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
+        <button class="sign-up-button">Sign up</button>
+      </form>
 
-        <div class="footer-nederst">
-            <div class="kontakt">
-                <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
-                <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
-                <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
-                <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
-            </div>
-
-            <div class="rapport">
-                <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
-                <p>Smiley rapport</p>
-                <p>© 2025 Chums Vinbar & Bistro</p>
-            </div>
+      <div class="footer-nederst">
+        <div class="kontakt">
+          <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
+          <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
+          <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
+          <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
         </div>
+
+        <div class="rapport">
+          <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
+          <p>Smiley rapport</p>
+          <p>© 2025 Chums Vinbar & Bistro</p>
+        </div>
+      </div>
     </footer>
     <script src="menu.js"></script>
-</body>
-
+  </body>
 </html>

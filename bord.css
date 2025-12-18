@@ -77,6 +77,17 @@ main {
   max-width: 450px;
   margin: 20px;
 }
+
+.grey {
+  color: rgb(201, 201, 201);
+  font-weight: 600;
+}
+
+.black {
+  color: black;
+  font-size: 1.7rem;
+}
+
 /*************** Web *********************/
 @media (min-width: 768px) {
   .grid_1_1_bord {
@@ -111,5 +122,8 @@ main {
   }
   .p_over8 {
     margin-top: 60px;
+  }
+  .black {
+    font-size: 2.2rem;
   }
 }

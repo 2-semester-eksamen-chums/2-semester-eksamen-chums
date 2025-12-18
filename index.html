@@ -1,220 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
     <title>Forside</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <img src="img/logo.webp" alt="Logo" class="logo" />
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="menukort.html">Menu</a></li>
-                <li><a href="bord.html">Booking</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      <a href="index.html">
+        <img src="img/logo.webp" alt="Logo" class="logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="menukort.html" class="nav-link active">Menu</a></li>
+          <li><a href="bord.html">Booking</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
 
-
     <main>
-        <div class="forside_img_relative">
-            <img class="forside_img" src="img/Chum_forside.webp" alt="billede af chums vin og ost">
-            <div class="forside_h1_p_absolute">
-                <h1>CHUMS</h1>
-                <p>Vinbar & Bistro</p>
+      <div class="forside_img_relative">
+        <img class="forside_img" src="img/Chum_forside.webp" alt="billede af chums vin og ost" />
+        <div class="forside_h1_p_absolute">
+          <h1 class="forside_h1">CHUMS</h1>
+          <h2 class="forside_h2">Winebar & Bistro</h2>
+        </div>
+      </div>
+
+      <div class="forside_button_margin">
+        <a class="forside_button" href="menukort.html">MENU</a>
+        <a class="forside_button" href="bord.html">BOOK A TABLE</a>
+        <a class="forside_button" href="events.html">EVENTS</a>
+      </div>
+
+      <div class="location_opening_backcolor grid_1_1">
+        <div>
+          <h2 class="location_h2">Locations</h2>
+          <div class="location_p">
+            <p>Nørre Farimagsgade 82, 1364 København</p>
+            <p>Kampergade 5, 3000 Helsingør</p>
+          </div>
+
+          <h2 class="opening_h2">Opening hours</h2>
+          <div class="opening_hours_section_width">
+            <div class="day_time_rows">
+              <p>Monday</p>
+              <hr />
+              <p>Closed</p>
             </div>
+
+            <div class="day_time_rows">
+              <p>Tuesday</p>
+              <hr />
+              <p>14:00-22:00</p>
+            </div>
+
+            <div class="day_time_rows">
+              <p>Wednesday</p>
+              <hr />
+              <p>14:00-23:00</p>
+            </div>
+
+            <div class="day_time_rows">
+              <p>Thursday</p>
+              <hr />
+              <p>14:00-23:00</p>
+            </div>
+
+            <div class="day_time_rows">
+              <p>Friday</p>
+              <hr />
+              <p>14:00-23:00</p>
+            </div>
+
+            <div class="day_time_rows">
+              <p>Saturday</p>
+              <hr />
+              <p>14:00-23:00</p>
+            </div>
+
+            <div class="day_time_rows">
+              <p>Sunday</p>
+              <hr />
+              <p>Closed</p>
+            </div>
+          </div>
         </div>
 
-        <div class="forside_button_margin">
-            <a class="forside_button" href="menukort.html">MENU</a>
-            <a class="forside_button" href="bord.html">BOOK A TABLE</a>
-            <a class="forside_button" href="events.html">EVENTS</a>
+        <div>
+          <img class="location_img" src="img/location.webp" alt="billede af vin på hylder" />
         </div>
+      </div>
 
-
-        <div class="location_opening_backcolor grid_1_1">
-            <div>
-                <h2 class="location_h2 ">Locations</h2>
-                <div class="location_p">
-                    <p>Nørre Farimagsgade 82, 1364 København</p>
-                    <p>Kampergade 5, 3000 Helsingør</p>
-                </div>
-
-                <h2 class="opening_h2">Opening hours</h2>
-                <div class="opening_hours_section_width">
-
-                    <div class="day_time_rows">
-                        <p>Monday</p>
-                        <hr>
-                        <p>Closed</p>
-                    </div>
-
-                    <div class="day_time_rows">
-                        <p>Tuesday</p>
-                        <hr>
-                        <p>14:00-22:00</p>
-                    </div>
-
-                    <div class="day_time_rows">
-                        <p>Wednesday</p>
-                        <hr>
-                        <p>14:00-23:00</p>
-                    </div>
-
-                    <div class="day_time_rows">
-                        <p>Thursday</p>
-                        <hr>
-                        <p>14:00-23:00</p>
-                    </div>
-
-                    <div class="day_time_rows">
-                        <p>Friday</p>
-                        <hr>
-                        <p>14:00-23:00</p>
-                    </div>
-
-                    <div class="day_time_rows">
-                        <p>Saturday</p>
-                        <hr>
-                        <p>14:00-23:00</p>
-                    </div>
-
-                    <div class="day_time_rows">
-                        <p>Sunday</p>
-                        <hr>
-                        <p>Closed</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <img class="location_img" src="img/location.webp" alt="billede af vin på hylder">
-            </div>
+      <div class="grid_1_1 about_us_container">
+        <div class="about_us_section">
+          <h2 class="about_us_h2">About us</h2>
+          <p class="about_us_p">At Chums we specialize in both delicious warm cheese -including Mont D’Or when it is in season from September to March - as well as fondue and baked Camembert.</p>
+          <p class="about_us_p">Bring your friends, family or your loved ones, and we’ll make sure you have a taste experience out of the ordinary. You’ll find our winebars in Copenhagen near Nørreport st. and in Helsingør by Gammel Torv.</p>
         </div>
-
-        <div class="grid_1_1 about_us_container">
-            <div class="about_us_section">
-                <h2 class="about_us_h2">About us</h2>
-                <p class="about_us_p">At Chums we specialize in both delicious warm cheese -including Mont D’Or when it
-                    is
-                    in season from
-                    September
-                    to March -
-                    as well as fondue and baked Camembert.</p>
-                <p class="about_us_p ">Bring your friends, family or your loved ones, and we’ll make sure you have a
-                    taste
-                    experience out of the
-                    ordinary.
-                    You’ll find our winebars in Copenhagen near Nørreport st. and in Helsingør by Gammel Torv.</p>
-            </div>
-            <div class="about_us_img">
-                <img src="img/aboutus.webp" alt="billede af chums vinvæg">
-            </div>
+        <div class="about_us_img">
+          <img src="img/aboutus.webp" alt="billede af chums vinvæg" />
         </div>
+      </div>
 
-        <div class="ratings_section">
-            <h2 class="ratings_h2">Ratings:</h2>
-            <div class="rating_scroll">
-                <div class="rating_box">
-                    <p>“Simply amazing! The staff was very nice and accommodating! The food was so fresh and delicious!
-                        For
-                        our
-                        first night in
-                        Copenhagen they set the bar so high!!”</p>
-                </div>
-                <div class="rating_box">
-                    <p>“I really liked this Tapas wine bar and Bistro. The atmosphere and service were great and the
-                        food
-                        was
-                        very enjoyable.”</p>
-                </div>
-                <div class="rating_box">
-                    <p>Highly recommend. Had a fabulous Chianti with warm cheese, meats, olive and bread. Perfection!
-                        Yerges
-                        our
-                        host was
-                        wonderful.</p>
-                </div>
-                <div class="rating_box">
-                    <p>“Simply amazing! The staff was very nice and accommodating! The food was so fresh and delicious!
-                        For
-                        our
-                        first night in
-                        Copenhagen they set the bar so high!!”</p>
-                </div>
-                <div class="rating_box">
-                    <p>“Simply amazing! The staff was very nice and accommodating! The food was so fresh and delicious!
-                        For
-                        our
-                        first night in
-                        Copenhagen they set the bar so high!!”</p>
-                </div>
-                <div class="rating_box">
-                    <p>“Simply amazing! The staff was very nice and accommodating! The food was so fresh and delicious!
-                        For
-                        our
-                        first night in
-                        Copenhagen they set the bar so high!!”</p>
-                </div>
-                <div class="rating_box">
-                    <p>“Simply amazing! The staff was very nice and accommodating! The food was so fresh and delicious!
-                        For
-                        our
-                        first night in
-                        Copenhagen they set the bar so high!!”</p>
-                </div>
-            </div>
+      <div class="ratings_section">
+        <h2 class="ratings_h2">Ratings:</h2>
+        <div class="rating_scroll">
+          <div class="rating_box">
+            <p>“Simply amazing! The staff was very nice and accommodating! The food was so fresh and delicious! For our first night in Copenhagen they set the bar so high!!”</p>
+          </div>
+          <div class="rating_box">
+            <p>“I really liked this Tapas wine bar and Bistro. The atmosphere and service were great and the food was very enjoyable.”</p>
+          </div>
+          <div class="rating_box">
+            <p>Highly recommend. Had a fabulous Chianti with warm cheese, meats, olive and bread. Perfection! Yerges our host was wonderful.</p>
+          </div>
+          <div class="rating_box">
+            <p>“One of THE BEST places in Copenhagen. Kasper was the greatest — better than any fancy cocktail or trendy instagram spot — a true haven of hygge and kind souls”</p>
+          </div>
+          <div class="rating_box">
+            <p>“Fun atmosphere and great food. Laughed all evening being entertained by the staff and host. Will definitely return. Thank you guys.”</p>
+          </div>
+          <div class="rating_box">
+            <p>“Wonderful service, charming venue with exceptional wine and hot cheese. The semi-dried tomatoes were absolutely delicious! Thank you 🍷🧀”</p>
+          </div>
+          <div class="rating_box">
+            <p>“Really cozy wine bar with amazing cheese (especially the Mont d’Or in winter) and antipasti, plus great wine recommendations and service.”</p>
+          </div>
         </div>
+      </div>
     </main>
 
-
     <footer>
-        <h2>Join our newsletter</h2>
-        <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
+      <h2>Join our newsletter</h2>
+      <h3>Stay up to date when our january sale goes live, new events and much more!</h3>
 
-        <form class="sign-up">
-            <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
-            <button class="sign-up-button">Sign up</button>
-        </form>
+      <form class="sign-up">
+        <input type="email" placeholder="Be a part of our wine loving community" class="search-input" id="email" />
+        <button class="sign-up-button">Sign up</button>
+      </form>
 
-        <div class="footer-nederst">
-            <div class="kontakt">
-                <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
-                <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
-                <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
-                <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
-            </div>
-
-            <div class="rapport">
-                <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
-                <p>Smiley rapport</p>
-                <p>© 2025 Chums Vinbar & Bistro</p>
-            </div>
+      <div class="footer-nederst">
+        <div class="kontakt">
+          <p>Telephone:<a href="tel:+4526234784"> +45 26 23 47 84</a></p>
+          <p>Email: <a href="mailto:christian@chums.dk">christian@chums.dk</a></p>
+          <p>Instagram:<a href="https://www.instagram.com/chums.winebar/"> @chums.winebar</a></p>
+          <p>Facebook:<a href="https://www.facebook.com/Chums.dk">Chums vinbar og bistro </a></p>
         </div>
+
+        <div class="rapport">
+          <img src="./img/smileyrapport.webp" alt="smileyrapport billede" />
+          <p>Smiley rapport</p>
+          <p>© 2025 Chums Vinbar & Bistro</p>
+        </div>
+      </div>
     </footer>
     <script src="menu.js"></script>
-</body>
-
+  </body>
 </html>
