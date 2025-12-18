@@ -2,6 +2,7 @@ console.log("loaded...");
 /*Scriptet er blevet indlæst*/
 
 const eventsUrl = "https://qpxfpzldrliwvmichmrh.supabase.co/rest/v1/Events";
+
 const key = "sb_publishable_SEZpXmVn1FJkomllatBYGA_n-d_5JTH";
 /*Vi giver adgang via "key" til at hnete supabase url, og taler til tabellen "Events"*/
 
