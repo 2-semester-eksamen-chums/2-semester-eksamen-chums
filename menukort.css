@@ -10,10 +10,6 @@ img {
   height: auto;
   display: block;
 }
-/*************** js filter knapper **************/
-.hidden {
-  display: none;
-}
 
 /******************************* TEKST **************************/
 
@@ -86,7 +82,7 @@ li {
 /***************************** KNAPPER ********************************/
 
 /********** hvide knapper *********/
-.hvid_knap_menu {
+.gul_knap_menu {
   background-color: #fdbc28;
   color: black;
   cursor: pointer;
@@ -98,8 +94,8 @@ li {
   text-decoration: none;
 }
 
-.hvid_knap_menu:hover {
-  background-color: #ffcb57;
+.gul_knap_menu:hover {
+  background-color: #fde38a;
   transform: scale(1.05);
 }
 
@@ -108,6 +104,10 @@ li {
 }
 
 /************* Filter knapper ************/
+
+:target {
+  scroll-margin-top: 100px;
+}
 
 .filter_knap {
   background-color: transparent;
