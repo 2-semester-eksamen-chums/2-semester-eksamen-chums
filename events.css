@@ -12,6 +12,10 @@ img {
 
 /***** events *******/
 
+a {
+  text-decoration: none;
+}
+
 .event-intro {
   padding-left: 45px;
   padding-right: 45px;
